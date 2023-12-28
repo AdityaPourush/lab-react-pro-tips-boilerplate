@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const Navbar = ()=> {
     return(
         <>
-            <div style={{display: "flex", justifyContent: "space-between", alignItems: "center", margin: "1vh", backgroundColor: "blue"}}>
+            <div style={{display: "flex", justifyContent: "space-between", alignItems: "center", margin: "1vh", backgroundColor: "blue", flexWrap: "wrap", width: "100%"}}>
                 <Link to={"/"} style={{padding : "2vh",  color: "black" , textDecoration: "none"}}><h1>Kalvium</h1></Link>
-                <div style={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
+                <div style={{display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap"}}>
                     <Link to={"/contact"} style={{padding : "2vh",  color: "black" , textDecoration: "none"}}><h1>Contact</h1></Link>
                     <Link to={"/form"} style={{padding : "2vh", color: "black" , textDecoration: "none"}}> <h1>Registration Form</h1> </Link>
                 </div>
